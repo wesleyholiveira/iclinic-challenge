@@ -22,7 +22,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js --ignore __tests__",
-    "test": "jest"
+    "test": "NODE_ENV=test jest"
   },
   "author": "Wesley Oliveira",
   "license": "ISC"
