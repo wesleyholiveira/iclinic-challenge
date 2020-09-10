@@ -18,8 +18,10 @@ class PrescriptionValidator {
         const { error } = schema.validate(req.body);
         if (error) {
             return res.status(400).json({
-                code: '01',
-                message: 'malformed request'
+                error: {
+                    code: '01',
+                    message: 'malformed request'   
+                }
             });
         }
 
