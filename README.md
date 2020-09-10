@@ -18,12 +18,17 @@ O arquivo **.env.test** é utilizado no **Jest** para execução dos testes, o d
 
 # Rodando o projeto
 Para rodar o projeto é bem simples, primeiramente deve se instalar o **sequelize-cli** para rodar as migrations e os seeders:
+
 ```npm install --save-dev sequelize-cli```
 
 Em segundo lugar, devemos rodar as migrations e os seeders:
-```npx sequelize db:migrate```
-```npx sequelize db:seed:all```
+```
+npx sequelize db:migrate
+npx sequelize db:seed:all
+```
 
 E em terceiro lugar, construimos as imagens da aplicação e rodamos os containers:
-```docker-compose build```
-```docker-compose up -d```
+```
+docker-compose build
+docker-compose up -d
+```
